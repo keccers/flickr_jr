@@ -12,4 +12,8 @@ configure do
   set :views, File.join(Sinatra::Application.root, "app", "views")
 end
 
+# Configure Sass
+use Sass::Plugin::Rack
+Sass::Plugin.options[:style] = :expanded
+
 run Sinatra::Application

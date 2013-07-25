@@ -89,13 +89,13 @@ namespace :db do
   desc "Create the database at #{DB_NAME}"
   task :create do
     puts "Creating database #{DB_NAME} if it doesn't exist..."
-    exec("createdb #{DB_NAME}")
+    system("createdb #{DB_NAME}")
   end
 
   desc "Drop the database at #{DB_NAME}"
   task :drop do
     puts "Dropping database #{DB_NAME}..."
-    exec("dropdb #{DB_NAME}")
+    system("dropdb #{DB_NAME}")
   end
 
   desc "Migrate the database (options: VERSION=x, VERBOSE=false, SCOPE=blog)."
@@ -112,6 +112,16 @@ namespace :db do
     require APP_ROOT.join('db', 'seeds.rb')
   end
 
+  desc "Drop, create, migrate, and database"
+  task :build => [:drop, :create, :migrate] do 
+    puts "Finished building..."
+  end
+
+  desc "Drop, create, migrate, and seed database"
+  task :rebuild => [:drop, :create, :migrate, :seed] do 
+    puts "Finished rebuilding..."
+  end
+
   desc "Returns the current schema version number"
   task :version do
     puts "Current version: #{ActiveRecord::Migrator.current_version}"
@@ -120,7 +130,7 @@ end
 
 desc 'Start IRB with application environment loaded'
 task "console" do
-  exec "irb -r./config/environment"
+  system "irb -r./config/environment"
 end
 
 desc "Run the specs"
