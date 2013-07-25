@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
 # PostgreSQL driver
 gem 'pg'
@@ -25,9 +25,8 @@ gem 'sass'
 gem 'bourbon'
 gem 'neat'
 
-group :test do
+group :test, :development do
   gem 'pry'
-  gem 'debugger'
-  gem 'faker'
+  # gem 'faker'
   gem 'rspec'
 end
