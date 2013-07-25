@@ -1,0 +1,7 @@
+@import 'stylesheets/bourbon/bourbon';
+@import 'stylesheets/neat/neat';
+
+.container{
+  @include span-columns(4);
+  background-color: red;
+}
