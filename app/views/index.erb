@@ -1,5 +1,12 @@
 <div class="container">
-  
+  <% if @photos %>
+  <% @photos.each do |photo| %>
+  <%= photo.id %>
+  <img src="<%= photo.photo.url %>" alt="">  
+  <% end %>
+<% end %>
+
+
 <form action="" method="POST">
   <%= erb :_login_form, layout: false %>
 </form>
