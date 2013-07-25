@@ -18,12 +18,37 @@ require 'logger'
 require 'sinatra'
 require "sinatra/reloader" if development?
 
+require 'rake'
+require 'shotgun'
+
+require 'bcrypt'
+
+# Image Uploading 
+require 'mini_magick'
+require 'carrierwave'
+require 'carrierwave/orm/activerecord'
+
+# Styling
+require 'sass'
+require 'bourbon'
+require 'neat'
+
+# Testing
+require 'debugger'
+require 'faker'
+require 'pry'
+
+
 require 'erb'
 
 # Some helper constants for path-centric logic
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 
 APP_NAME = APP_ROOT.basename.to_s
+
+# Set up the uploaders
+set :root, APP_ROOT
+Dir[APP_ROOT.join('app', 'uploaders', '*.rb')].each { |file| require file }
 
 # Set up the controllers and helpers
 Dir[APP_ROOT.join('app', 'controllers', '*.rb')].each { |file| require file }
