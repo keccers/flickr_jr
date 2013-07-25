@@ -115,7 +115,7 @@ namespace :db do
   desc "Drop, create, migrate, and database"
   task :build => [:drop, :create, :migrate] do 
     puts "Finished building..."
-  end
+  ende
 
   desc "Drop, create, migrate, and seed database"
   task :rebuild => [:drop, :create, :migrate, :seed] do 
@@ -137,3 +137,4 @@ desc "Run the specs"
 RSpec::Core::RakeTask.new(:spec)
 
 task :default  => :specs
+end
