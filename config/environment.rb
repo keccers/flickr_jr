@@ -46,6 +46,7 @@ APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 
 APP_NAME = APP_ROOT.basename.to_s
 
+# Set up the uploaders
 set :root, APP_ROOT
 Dir[APP_ROOT.join('app', 'uploaders', '*.rb')].each { |file| require file }
 
