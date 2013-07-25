@@ -18,15 +18,17 @@ gem 'shotgun'
 
 gem 'bcrypt-ruby'
 
-gem 'mini_magick'
-gem 'carrierwave'
-
+# Use Sass for styling
 gem 'sass'
 gem 'bourbon'
 gem 'neat'
 
+# Image uploading
+gem 'mini_magick'
+gem 'carrierwave'
+
 group :test, :development do
   gem 'pry'
-  # gem 'faker'
+  gem 'faker'
   gem 'rspec'
 end
