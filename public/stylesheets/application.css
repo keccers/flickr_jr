@@ -1,13 +1,17 @@
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .container {
   display: block;
   float: left;
   margin-right: 2.35765%;
-  width: 31.76157%;
-  background-color: red; }
-  .container:last-child {
-    margin-right: 0; }
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  background-color: blue;
+}
+.container:last-child {
+  margin-right: 0;
+}

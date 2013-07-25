@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
 # PostgreSQL driver
 gem 'pg'
@@ -18,16 +18,17 @@ gem 'shotgun'
 
 gem 'bcrypt-ruby'
 
-gem 'mini_magick'
-gem 'carrierwave'
-
+# Use Sass for styling
 gem 'sass'
 gem 'bourbon'
 gem 'neat'
 
-group :test do
+# Image uploading
+gem 'mini_magick'
+gem 'carrierwave'
+
+group :test, :development do
   gem 'pry'
-  gem 'debugger'
   gem 'faker'
   gem 'rspec'
 end
