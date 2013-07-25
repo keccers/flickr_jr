@@ -1,0 +1,58 @@
+/*
+Syntax error: File to import not found or unreadable: html5/blocks.
+              Load paths:
+                /Users/apprentice/Dropbox/DBC-Chicago/grasshoppers/KCHAMP/05WEEK/flickr/public
+                /Users/apprentice/Dropbox/DBC-Chicago/grasshoppers/KCHAMP/05WEEK/flickr/public/stylesheets/sass
+        on line 7 of stylesheets/sass/normalize.scss
+
+2: 
+3: /* =============================================================================
+4:    HTML5 display definitions
+5:    ========================================================================== */
+6: 
+7: @import "html5/blocks";
+8: @import "html5/inline-blocks";
+9: @import "html5/audio";
+10: @import "html5/hidden";
+11: 
+12: 
+
+Backtrace:
+stylesheets/sass/normalize.scss:7
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/tree/import_node.rb:45:in `import'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/tree/root_node.rb:20:in `render'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/engine.rb:315:in `_render'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/engine.rb:262:in `render'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:283:in `block in watch'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
+/Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.9/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: html5/blocks.\A               Load paths:\A                 /Users/apprentice/Dropbox/DBC-Chicago/grasshoppers/KCHAMP/05WEEK/flickr/public\A                 /Users/apprentice/Dropbox/DBC-Chicago/grasshoppers/KCHAMP/05WEEK/flickr/public/stylesheets/sass\A         on line 7 of stylesheets/sass/normalize.scss\A \A 2: \A 3: /* =============================================================================\A 4:    HTML5 display definitions\A 5:    ========================================================================== */\A 6: \A 7: @import \"html5/blocks\";\A 8: @import \"html5/inline-blocks\";\A 9: @import \"html5/audio\";\A 10: @import \"html5/hidden\";\A 11: \A 12: "; }
