@@ -1,7 +1,8 @@
-@import 'stylesheets/bourbon/bourbon';
-@import 'stylesheets/neat/neat';
+@import '../bourbon/bourbon';
+@import '../neat/neat';
 
 .container{
-  @include span-columns(4);
-  background-color: red;
+  @include span-columns(8);
+  @include shift(2);
+  background-color: blue;
 }
