@@ -1,15 +1,25 @@
-<div class="container">
-  <% if @photos %>
-  <% @photos.each do |photo| %>
-  <%= photo.id %>
-  <img src="<%= photo.photo.url %>" alt="">  
-  <% end %>
-<% end %>
+<div class="nav">
+  <h1> The Burning House</h1>
+  <h4><a href="/login">|| Login</a></h4> 
 
-
-<form action="" method="POST">
+  <form action="" method="POST">
   <%= erb :_login_form, layout: false %>
 </form>
 
 <%= erb :_photo_form, layout: false %>
 </div>
+
+</div>
+
+<div class="container">
+  <% if @photos %>
+  <% @photos.each do |photo| %>
+  <div class="photo">
+    <img src="<%= photo.photo.url %>" alt="">  
+  </div>
+  <% end %>
+<% end %>
+
+
+
+

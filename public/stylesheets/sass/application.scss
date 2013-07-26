@@ -1,7 +1,98 @@
 @import '../bourbon/bourbon';
 @import '../neat/neat';
 
-.container{
-  @include span-columns(8);
-  @include shift(2);
+$mobile: new-breakpoint(max-width 768px 8);
+
+/*========  Colors  ========*/
+
+$light-blue: #7AC5DF;
+$red: #FF5452;
+$white: #FFFFFF;
+$med-blue: #9AA5B8;
+$dark-blue: #3D4454;
+
+/*========  Fonts  ========*/
+$base: 28px;
+
+h1, h2, h3, h4, h5, h6  {
+  font-family: 'Ubuntu', sans-serif;
+  color: $dark-blue;
 }
+
+h1 {
+  font-size: golden-ratio($base, 1)
+}
+h2 {
+  font-size: golden-ratio($base, 0)
+}
+h3 {
+  font-size: golden-ratio($base, -1)
+}
+h4 {
+  font-size: golden-ratio($base, -1)
+}
+h5 {
+  font-size: golden-ratio($base, -2)
+}
+h6 {
+  font-size: golden-ratio($base, -2)
+}
+
+p, a {
+  font-size: golden-ratio($base, -1)
+}
+
+a{
+  text-decoration: none;
+  color: $med-blue;
+}
+
+body {
+  background-color: $white;
+  color: $dark-blue;
+  font-family: 'Vollkorn', serif;
+}
+
+.errors {
+  color: $red;
+}
+
+.container{
+  @include span-columns(7);
+  @include pad(default);
+
+  @include media($mobile) {
+    @include span-columns(6);
+    @include shift(1);
+  }
+}
+
+.nav {
+  @include span-columns(3);  
+  @include shift(1);
+
+  @include media($mobile) {
+    @include span-columns(6);
+    @include shift(1);
+  }
+}
+
+.photo {
+  @include pad(default);
+}
+
+img {
+  width: 100%;
+}
+
+/*========  Forms  ========*/
+input {
+  width: 100%;
+}
+
+input[type='submit']{
+  border: 0;
+  background: $dark-blue;
+  color: $white;
+}
+

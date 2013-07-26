@@ -1,6 +1,6 @@
 get '/' do
 @photos = Photo.all
-  erb :index
+erb :index
 end
 
 get '/login' do
@@ -21,7 +21,7 @@ post '/photo_upload' do
   photo = Photo.new(photo: params[:photo])
 
   if photo.save
-    redirect to '/'
+    redirect '/'
   else
     erb :index
   end
