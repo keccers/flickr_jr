@@ -1,0 +1,29 @@
+  <% if @errors %>
+    <% @errors.full_messages.each do |error| %>
+      <span class="errors"><%= error %></span>
+    <% end %>
+  <%end %>
+ 
+<form action="/register" method="POST">
+   <label for="user[first_name]">First Name
+    <input type="text" name="user[first_name]" required>
+  </label>
+
+   <label for="user[last_name]">Last Name
+    <input type="text" name="user[last_name]" required>
+  </label>
+
+  <label for="user[username]">Username
+    <input type="text" name="user[username]" required>
+  </label>
+
+  <label for="user[email]">Email
+    <input type="text" name="user[email]" required>
+  </label>
+
+  <label for="user[password]">Password
+    <input type="password" name="user[password]" required>
+  </label>
+
+  <input type="submit" value="Login">
+</form>

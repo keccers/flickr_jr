@@ -84,6 +84,9 @@ body {
   width: 23.23176%;
   margin-left: 8.5298%;
 }
+.nav input {
+  width: 100%;
+}
 .nav:last-child {
   margin-right: 0;
 }
@@ -109,10 +112,6 @@ img {
 }
 
 /*========  Forms  ========*/
-input {
-  width: 100%;
-}
-
 input[type='submit'] {
   border: 0;
   background: #3d4454;

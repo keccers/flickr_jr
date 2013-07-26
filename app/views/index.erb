@@ -1,8 +1,23 @@
 <div class="nav">
   <h1> The Burning House</h1>
-  <h4><a href="/login">|| Login</a></h4> 
+  <% if @user  %>
+    <h4>Hi, <%= @user.first_name %>! || <a href="/logout">Logout</a></h4>
+  <% else %>
+    <h4><a href="/login">Login</a> || <a href="/register">Sign Up</a></h4>
+  <% end %> 
+  
 
-  <form action="" method="POST">
+
+
+
+
+  <% if @errors %>
+    <% @errors.each do |error| %>
+      <span class="errors"><%= error %></span>
+    <% end %>
+  <%end %>
+
+  <form id="login" action="/login" method="POST">
   <%= erb :_login_form, layout: false %>
 </form>
 

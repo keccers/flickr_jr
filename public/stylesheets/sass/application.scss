@@ -68,6 +68,10 @@ body {
 }
 
 .nav {
+  input {
+    width: 100%;
+  }
+  
   @include span-columns(3);  
   @include shift(1);
 
@@ -86,9 +90,6 @@ img {
 }
 
 /*========  Forms  ========*/
-input {
-  width: 100%;
-}
 
 input[type='submit']{
   border: 0;
