@@ -3,9 +3,6 @@ get '/' do
 erb :index
 end
 
-get '/login' do
-
-end
 
 post '/login' do
 
@@ -26,4 +23,5 @@ post '/photo_upload' do
     erb :index
   end
 end
+
 

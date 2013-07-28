@@ -83,6 +83,7 @@ body {
   margin-right: 2.35765%;
   width: 23.23176%;
   margin-left: 8.5298%;
+  padding: 2.35765%;
 }
 .nav:last-child {
   margin-right: 0;
@@ -98,6 +99,9 @@ body {
   .nav:last-child {
     margin-right: 0;
   }
+}
+.nav #login {
+  display: none;
 }
 
 .photo {

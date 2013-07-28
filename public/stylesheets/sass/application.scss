@@ -70,11 +70,14 @@ body {
 .nav {
   @include span-columns(3);  
   @include shift(1);
+   @include pad(default);
 
   @include media($mobile) {
     @include span-columns(6);
     @include shift(1);
   }
+
+  #login {display: none;}
 }
 
 .photo {
@@ -95,4 +98,5 @@ input[type='submit']{
   background: $dark-blue;
   color: $white;
 }
+
 

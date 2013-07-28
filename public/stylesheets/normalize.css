@@ -1,7 +1,7 @@
 /*
 Syntax error: File to import not found or unreadable: html5/blocks.
               Load paths:
-                /Users/apprentice/Dropbox/DBC-Chicago/grasshoppers/KCHAMP/05WEEK/flickr/public/stylesheets/sass
+                /Users/apprentice/Dropbox/DBC-Chicago/Grasshoppers/KCHAMP/05WEEK/flickr/public/stylesheets/sass
                 /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/bourbon-3.1.8/app/assets/stylesheets
                 /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/neat-1.3.0/app/assets/stylesheets
         on line 7 of ./public/stylesheets/sass/normalize.scss
@@ -78,4 +78,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: html5/blocks.\A               Load paths:\A                 /Users/apprentice/Dropbox/DBC-Chicago/grasshoppers/KCHAMP/05WEEK/flickr/public/stylesheets/sass\A                 /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/bourbon-3.1.8/app/assets/stylesheets\A                 /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/neat-1.3.0/app/assets/stylesheets\A         on line 7 of ./public/stylesheets/sass/normalize.scss\A \A 2: \A 3: /* =============================================================================\A 4:    HTML5 display definitions\A 5:    ========================================================================== */\A 6: \A 7: @import \"html5/blocks\";\A 8: @import \"html5/inline-blocks\";\A 9: @import \"html5/audio\";\A 10: @import \"html5/hidden\";\A 11: \A 12: "; }
+  content: "Syntax error: File to import not found or unreadable: html5/blocks.\A               Load paths:\A                 /Users/apprentice/Dropbox/DBC-Chicago/Grasshoppers/KCHAMP/05WEEK/flickr/public/stylesheets/sass\A                 /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/bourbon-3.1.8/app/assets/stylesheets\A                 /Users/apprentice/.rvm/gems/ruby-1.9.3-p374/gems/neat-1.3.0/app/assets/stylesheets\A         on line 7 of ./public/stylesheets/sass/normalize.scss\A \A 2: \A 3: /* =============================================================================\A 4:    HTML5 display definitions\A 5:    ========================================================================== */\A 6: \A 7: @import \"html5/blocks\";\A 8: @import \"html5/inline-blocks\";\A 9: @import \"html5/audio\";\A 10: @import \"html5/hidden\";\A 11: \A 12: "; }
