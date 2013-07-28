@@ -1,15 +1,21 @@
 <div class="nav">
   <h1> The Burning House</h1>
-  <h4><a id="login-show" href="/login">|| Login</a></h4> 
+  <% unless current_user %>
+  <h4><a id="login-show" href="/login">Login </a> || <a id="sign-up-show" href="#"> Sign Up</a></h4> 
 
-  <form id="login" action="" method="POST">
-  <%= erb :_login_form, layout: false %>
-</form>
-<% if current_user %>
-  <%= erb :_photo_form, layout: false %>
-<% end %>
-</div>
+  <form id="login" action="/login" method="POST">
+    <%= erb :_login_form, layout: false %>
+  </form>
 
+  <form id="signup" action="/register" method="POST">
+    <%= erb :_sign_in_form, layout: false %>
+  </form>
+
+  <% else %>
+    <h4>Hi, <%= current_user.first_name %>!<br/><a href="/logout" alt="Log out">Logout</a></h4>
+    <%= erb :_photo_form, layout: false %>
+  <% end %>
+  </div>
 </div>
 
 <div class="container">
