@@ -6,8 +6,8 @@ class User < ActiveRecord::Base
   validates_presence_of :email, :message => 'You need an email to create an account.'
   validates_uniqueness_of :email, :message => 'This email address has already been taken.'
 
-  validates_presence_of :name, :message => 'You need a username to create an account.'
-  validates_uniqueness_of :name, :message => 'This username has already been taken.'
+  validates_presence_of :username, :message => 'You need a username to create an account.'
+  validates_uniqueness_of :username, :message => 'This username has already been taken.'
 
   def password
     @password ||= BCrypt::Password.new(password_hash)
@@ -20,7 +20,7 @@ class User < ActiveRecord::Base
 
   def self.authenticate(username, password)
     @user = User.find_by_username(username)
-    if @user.password == password
+    if @user && @user.password == password
       return @user
     else
       nil
