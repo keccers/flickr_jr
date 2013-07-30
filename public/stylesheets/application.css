@@ -35,13 +35,14 @@ h6 {
   font-size: 10.6955px;
 }
 
-p, a {
+p {
   font-size: 17.30532px;
 }
 
 a {
   text-decoration: none;
   color: #9aa5b8;
+  font-size: inherit;
 }
 
 body {
@@ -100,7 +101,7 @@ body {
     margin-right: 0;
   }
 }
-.nav #login {
+.nav #login, .nav #signup {
   display: none;
 }
 
