@@ -83,6 +83,11 @@ body {
 
 .photo {
   @include pad(default);
+  overflow: hidden;
+  .caption{
+    height: 3em;
+    visibility: hidden;
+  }
 }
 
 img {
@@ -94,10 +99,24 @@ input {
   width: 100%;
 }
 
+label, input {
+  font-size: 14px;
+}
+
 input[type='submit']{
+  @include pad();
   border: 0;
   background: $dark-blue;
   color: $white;
 }
+
+#photo_upload {
+  background-color: #DDD;
+  @include pad();
+  input[type='submit'] {
+    margin-top: 3%;
+  }
+}
+
 
 

@@ -107,6 +107,11 @@ body {
 
 .photo {
   padding: 2.35765%;
+  overflow: hidden;
+}
+.photo .caption {
+  height: 3em;
+  visibility: hidden;
 }
 
 img {
@@ -118,8 +123,21 @@ input {
   width: 100%;
 }
 
+label, input {
+  font-size: 14px;
+}
+
 input[type='submit'] {
+  padding: 2.35765%;
   border: 0;
   background: #3d4454;
   color: white;
+}
+
+#photo_upload {
+  background-color: #DDD;
+  padding: 2.35765%;
+}
+#photo_upload input[type='submit'] {
+  margin-top: 3%;
 }
