@@ -1,4 +1,10 @@
 $(document).ready(function() {
+  $('.photo').mouseenter( function(){
+    $(this).children('.caption').css('visibility', 'visible');
+    //$(this).children('.caption').show();
+  });
+
+
   $('#login-show').on('click', function(event){
     event.preventDefault();
     if ($('#signup').is(":visible")) {
